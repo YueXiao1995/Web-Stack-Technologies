@@ -1,0 +1,48 @@
+<!-- Author: Yue Xiao, Date: 2019.01.25, Email: 1995yuexiao@gmail.com-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>HTML Styles CSS</title>
+        <link rel="stylesheet" href="css/css_intro_styles.css">
+        <style>
+            body {background-color: powderblue;}
+            h2 {background-color: blue;}
+            #p01 {color: blue;}
+            p.class1 {color: red;}
+        </style>
+    </head>
+    <body>
+        <p>CSS stands for Cascading Style Sheets, it describes how HTML elements are to be displayed on screen, paper, or in other media</p>
+        <p>CSS can be added to HTML in 3 ways</p>
+        <ul>
+            <li><strong>Inline</strong>: by using the style attribute in HTML elements</li>
+            <li><strong>Internal</strong>: by using a &lt;style&gt; element in the &lt;head&gt; section</li>
+            <li><strong>External</strong>: by using an external CSS file</li>
+        </ul>
+        
+        <h1 style="background-color: red;">Inline CSS</h1>
+        
+        <h2>Internal CSS</h2>
+        
+        <h3>External CSS</h3>
+        
+        <!-- CSS Fonts -->
+        <p style="color: blue; font-family: verdana; font-size: 300%">Hello World 1</p>
+        <p style="color: red; font-family: cursive; font-size: 160%">Hello World 2</p>
+        
+        <!-- CSS Border -->
+        <p style="border: 1px solid powderblue;">Hello World 3</p>
+        
+        <!-- CSS Padding -->
+        <p style="border: 1px solid powderblue; padding: 30px;">Hello World 4</p>
+        
+        <!-- CSS Margin -->
+        <p style="border: 1px solid powderblue; padding: 30px; margin: 30px;">Hello World 5</p>
+        
+        <!-- and an id attribute to the element -->
+        <p id="p01">This paragraph has an id</p>
+        
+        <!-- add a class attribute to the element -->
+        <p class="class1">This paragraph belong to a class</p>
+    </body>
+</html>

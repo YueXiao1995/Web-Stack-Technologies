@@ -1,0 +1,40 @@
+<!-- Author: Yue Xiao, Date: 2019.01.30, Email: 1995yuexiao@gmail.com-->
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- declaring a language is important for accessibility application and search engines-->
+    <head>
+        <title>Image</title>
+    </head>
+    <body>
+        <!-- Image Size -->
+        <!-- There are two ways to define the width and height -->
+        <!-- using the style attributes is better. It prevents styles sheets from changing the size of images-->
+        <img src="./pictures/AKB48.png" alt="AKB48" style="width:500px;height:450px;">
+
+        <img src="./pictures/AKB48.png" alt="AKB48" width="500" height="450">
+        <hr>        
+        
+        <!-- The <picture> element contains a number of <source> elements, each referring to different image sources. This way the browser can choose the image that best fits the current view and/or device.-->
+        
+        <picture>
+            <source media="(min-width: 650px)" srcset="./pictures/AKB48.png">
+            <source media="(min-width: 465px)" srcset="./pictures/AKB48.png">
+            <img src="./pictures/AKB48.png" alt="Flowers" style="width:auto;">
+        </picture>
+        <hr>
+        <!--  Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags matched. -->
+        
+        <!-- Image Map -->
+        <img src="./pictures/phone.jpg" alt="phones" style="width:400px;height:200px;" usemap="#phones">
+        <map name="phones">
+            <area shape="rect" coords="80,20,165,180" alt="iPhone" href="https://www.apple.com/ie/iphone/">
+            <!-- coords: left, top, right, bottom-->
+            <area shape="rect" coords="233,20,323,180" alt="Mix" href="https://www.mi.com/global/mix/">
+        </map>
+        <hr>
+        <!-- Animated Images -->
+        <img src="./pictures/giphy.gif" alt="example gif"
+             sytle="width:100px;height:100px:">
+        
+    </body>
+</html>
