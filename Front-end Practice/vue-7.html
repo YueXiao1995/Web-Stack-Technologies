@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--  -->
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Vue Pratice 7 : Watch </title>
+    <script src="./vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- through $watch to response to the change of data -->
+        <p style="font-size:25px;">Counter: {{counter}}</p>
+        <p><button @click="counter++" style="font-size:25px">Click</button></p>
+    </div>
+
+    <div id="computed">
+        <!-- bind the data with var in Vue-->
+        kilometer: <input type="text" v-model="kilometers">
+        meter: <input type="text" v-model="meters">
+    </div>
+    <p id="info"></p>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                counter: 1
+            }
+        });
+        //through $watch to response to the change of data
+        vm.$watch('counter', function(nval, oval) {
+            alert("Counter: " + oval + " to " + nval)
+        });
+
+        var vm2 = new Vue({
+            el: '#computed',
+            data: {
+                kilometers: 0,
+                meters: 0
+            },
+            watch: {
+                // everytime the var kilometers changed, this function will be call
+                kilometers: function(val) {
+                    this.kilometers = val;
+                    this.meters = this.kilometers * 1000;
+                },
+                meters: function(val) {
+                    this.kilometers = val / 1000;
+                    this.meters = val;
+                }
+            }
+        });
+        
+        vm2.$watch('kilometers', function(nval, oval) {
+            document.getElementById('info').innerHTML = "change from: " + oval + " to " + nval;
+        })
+    </script>
+</body></html>

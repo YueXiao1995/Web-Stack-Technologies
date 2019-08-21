@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Practice 5: Loop</title>
+    <script src="./vue.min.js">
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <template v-for="site in sites">
+            <li>{{site.name}}</li>
+            <li>-------------</li>
+        </template>
+        
+        
+        <ul>
+            <li v-for="(value, key) in object">
+                {{key}}: {{value}}
+            </li>
+        </ul> 
+        
+         
+        <ul>
+            <li v-for="i in 10">
+                {{i}}
+            </li>
+        </ul> 
+    </div>
+
+
+</body>
+<script>
+    var data = {
+        sites: [{
+            name: 'Google'
+        }, {
+            name: 'Facebook'
+        }, {
+            name: 'Instegram'
+        }],
+        object: {
+            name: "Yue Xiao",
+            phone: "+353 89 4416833",
+            email: "1995yuexiao@gmail.com"
+        }
+    }
+    var vm = new Vue({
+        el: "#app",
+        data: data
+    })
+</script></html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- control statements -->
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Vue Pratice 4 : Control Statements</title>
+    <script src="./vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- v-if -->
+        <p v-if="seen">Hello World!</p>
+        <p><button @click="hide()">{{button1}}</button></p>
+        
+       
+        <!-- v-else -->
+        <div v-if="Math.random()>0.5">
+            <p>Random is bigger than 0.5</p>
+        </div>
+        <div v-else>
+            <p>Random is smaller than 0.5</p>
+            
+        </div>
+        
+        
+        <!-- v-else-if -->
+        <p><button @click="random()">Randomly</button></p>
+        <div v-if="type === 'A'">A</div>
+        <div v-else-if="type === 'B'">B</div>
+        <div v-else-if="type === 'C'">C</div>
+        <div v-else>Not A/B/C</div>
+
+        <!-- v-show -->
+        <p v-show="ok">Hello!</p>
+    </div>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                seen: true,
+                button1: "Hide",
+                type: 'A',
+                ok: true
+            }
+        })
+
+        function hide() {
+            if (vm.seen == false) {
+                vm.seen = true
+                vm.button1 = "Hide"
+            } else {
+                vm.seen = false
+                vm.button1 = "Show"
+            }
+        }
+        function random(){
+            
+            var r = Math.random()
+            //document.write(r)
+            if(r>0.75){
+                vm.type = "A"
+            }
+            else if(r>0.5 && r<0.75){
+                vm.type = "B"
+            }
+            else if(r>0.25 && r<0.5){
+                vm.type = "C"
+            }
+            else{
+                vm.type = "None"
+            }
+            //document.write(vm.type)
+        }
+
+    </script>
+</body></html>

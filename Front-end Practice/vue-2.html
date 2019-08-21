@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- set, change and get the data inside vue -->
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Vue Pratice 2 : Set, Change and Get the data inside the Vue Object</title>
+    <script src="./vue.min.js"></script>
+</head>
+
+<body>
+    <div id="profile">
+        <h2>Profile</h2>
+        <table>
+            <tr>
+                <td>Facebook: </td>
+                <td><a href="{{facebook}}">{{facebook}}</a></td>
+            </tr>
+            <tr>
+                <td>GitHub: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><a href="{{github}}">{{github}}</a></td>
+            </tr>
+            <tr>
+                <td>
+                    Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><a href="{{email}}">{{email}}</a></td>
+            </tr>
+        </table>
+        <p>{{message}}</p>
+        <p>
+            <button onclick="newMessage()">New Message!</button>
+        </p>
+        <p>
+            <button onclick="showVueData()">Show data in Vue</button>
+        </p>
+    </div>
+    <script type="text/javascript">
+        var data = {
+            facebook: "https://www.facebook.com/1995yuexiao",
+            github: "https://github.com/YueXiao1995",
+            email: "1995yuexiao@gmail.com",
+            message: "Hello! My name is Yue, welcome to my website"
+        }
+        var vm = new Vue({
+            el: '#profile',
+            data: data, //set the data
+        })
+
+        // reset the value of variable in vue
+        function newMessage() {
+            vm.message = "Hello! Welcome to my website, here you will see everything about me"
+        }
+
+        // show the data inside Vue's data var
+        function showVueData() {
+            var data = vm.$data
+            document.write("<table>")
+            for (i in data) {
+                document.write("<tr>")
+                document.write("<td>")
+                document.write(i)
+                document.write("</td>")
+                document.write("<td>")
+                document.write(data[i])
+                document.write("</td>")
+                document.write("</tr>")
+            }
+            document.write("</table>")
+        }
+    </script>
+</body></html>

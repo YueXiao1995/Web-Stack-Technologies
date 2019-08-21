@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- change the HTML file -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue Pratice 3 : Change the HTML file through Vue</title>
+    <script src="./vue.min.js"></script>
+</head>
+
+<style>
+    .class1 {
+        background: #444;
+        color: #eee;
+    }
+
+</style>
+
+<body>
+    <div id="app">
+        <!-- change the html code -->
+        <div v-html="message"></div>
+        <p><button onclick="changeMessage()">Change the Message</button></p>
+
+        <!-- change the attribute -->
+        <label for="r1"> Change Color</label><input type="checkbox" v-model="use" id="r1">
+        <div v-bind:class="{'class1': use}"> 
+            <pre><a v-bind:href="url">Facebook</a></pre>
+        <!-- v-bind:href="url"  ->  :href="url"-->
+        <!-- if the use is true, then use the class1 -->
+        v-bind:class command
+        </div>
+        
+        <!-- JavaScript -->
+        {{5 + 5}}<br>
+        {{ok? 'YES':'NO'}}<br>
+        {{text.split('').reverse().join('')}}
+        
+        
+        <!--  -->
+        <p v-if="seen">Hiden Line</p>
+        <p><button v-on:click="showHidenLine()">Show hiden line</button>
+        <!-- v-on:click="doSomething"  ->  @click="doSomething"-->
+        </p>
+        
+        <!-- bind the data -->
+        <p>{{textfield}}</p>
+        <input v-model="textfield">
+        
+        <!-- filter function-->
+        <p>{{testfilter|capitalize}}</p>
+    </div>
+
+    <script type="text/javascript">
+        var data = {
+            message: "<p>Hello! My name is Yue.</p><p>Welcome to my website!<p>",
+            use: false,
+            text: "Hello",
+            ok: true,
+            seen: false,
+            url: "https://www.facebook.com/1995yuexiao",
+            textfield:"please input something",
+            testfilter:"hello"
+        }
+        var vm = new Vue({
+            el: '#app',
+            data: data, //set the data
+            filters: {
+                capitalize: function(value){
+                    if(!value) return ''
+                    value = value.toString()
+                    return value.charAt(0).toUpperCase()+value.slice(1)
+                }
+            }
+        })
+        
+        // reset the value of variable in vue
+        function changeMessage() {
+            vm.message = "<p>Hello!</p><p>Welcome to my website, here you will see everything about me</p>"
+        }
+        
+        // change the value of seen in Vue
+        function showHidenLine(){
+            vm.seen = true
+        }
+        
+
+    </script>
+</body>
+
+</html>

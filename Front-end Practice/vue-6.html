@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Practice 6: Computed</title>
+    <script src="./vue.min.js">
+    </script>
+</head>
+
+<body>
+    <div id="app">
+       <!-- computed and methods-->
+        <p>Message: {{message}}</p>
+        <p>Reversed Message (computed) : {{reversedMessage}}</p>
+        <p>Reversed Message (method) : {{reversedMessage2()}}</p>
+        
+        <!-- computed getter and setter -->
+        <p>{{site}}</p>
+        <p><button @click="changeSite()">Change Site</button></p>
+        
+    </div>
+    
+    
+    <script>
+        var data = {
+            message: "Hello, I'm Yue",
+            sitename:"Google",
+            url:"http://www.google.com"
+        }
+        
+        var vm = new Vue({
+            el: "#app",
+            data: data,
+            computed: {
+                // getter
+                reversedMessage: function() {
+                    return this.message.split('').reverse().join('')
+                },
+                site:{
+                    // getter
+                    get: function(){
+                       return this.sitename + ' ' + this.url
+                    },
+                    // setter
+                    set: function(newVulue){
+                        var names = newVulue.split(' ')
+                        this.sitename = names[0]
+                        this.url = names[1]
+                    }
+                }
+            },
+            methods:{
+                reversedMessage2:function(){
+                    return this.message.split('').reverse().join('')
+                },
+                changeSite: function(){
+                    vm.site = 'Facebook http://facebook.com'
+                }
+            }
+        })
+    </script>
+</body></html>

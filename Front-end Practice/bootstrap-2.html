@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Practice 2: Grid System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Grid System-->
+    <div class="container-fluid">
+        <p>Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.
+
+            If you do not want to use all 12 columns individually, you can group the columns together to create wider columns:</p>
+
+        <img src="./Images/Grids.png">
+
+        <p>The grid system is responsive, and the columns will re-arrange automatically depending on the screen size.
+
+            Make sure that the sum adds up to 12 or fewer (it is not required that you use all 12 available columns).</p>
+    </div>
+
+    <!-- Grid Classes -->
+    <div class="container-fluid">
+        <h1>Grid Classes</h1>
+        <p>The Bootstrap 4 grid system has five classes:<br>
+
+            .col- (extra small devices - screen width less than 576px)<br>
+            .col-sm- (small devices - screen width equal to or greater than 576px)<br>
+            .col-md- (medium devices - screen width equal to or greater than 768px)<br>
+            .col-lg- (large devices - screen width equal to or greater than 992px)<br>
+            .col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+        </p>
+        <h1>Three equal width columns</h1>
+        <p>Note: Try to add a new div with class="col" inside the row class - this will create four equal-width columns.</p>
+        <div class="row">
+            <div class="col" style="background-color:lavender;">.col</div>
+            <div class="col" style="background-color:orange;">.col</div>
+            <div class="col" style="background-color:lavender;">.col</div>
+        </div>
+        <h1>Responsive Columns</h1>
+        <div class="row">
+            <div class="col-sm-3">.col-sm-3</div>
+            <div class="col-sm-3">.col-sm-3</div>
+            <div class="col-sm-3">.col-sm-3</div>
+            <div class="col-sm-3">.col-sm-3</div>
+        </div>
+        <h1>Two Unequal Responsive Columns</h1>
+        <div class="row">
+            <div class="col-sm-4">.col-sm-4</div>
+            <div class="col-sm-8">.col-sm-8</div>
+        </div>
+    </div>
+</body>
+
+</html>
