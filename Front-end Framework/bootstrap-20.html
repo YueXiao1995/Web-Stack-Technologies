@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Practice 19: Navigation Bar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <h3>1. Basic Navbar</h3>
+        <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+        <p>
+            With Bootstrap, a navigation bar can extend or collapse, depending on the screen size.<br>
+            A standard navigation bar is created with the <code>.navbar</code> class, followed by a responsive collapsing class: <code>.navbar-expand-xl|lg|md|sm</code> (stacks the navbar vertically on extra large, large, medium or small screens).<br>
+
+            To add links inside the navbar, use a <code>&lt;ul&gt;</code> element with <code>class="navbar-nav"</code>. Then add <code>&lt;li&gt;</code> elements with a <code>.nav-item</code> class followed by an <code>&lt;a&gt;</code> element with a <code>.nav-link</code> class</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container-fluid">
+        <h3>1. Vertical Navbar</h3>
+        <p>Remove the <code>.navbar-expand-xl|lg|md|sm</code> class to create a vertical navigation bar.</p>
+    </div>
+    
+    <nav class="navbar bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+
+</body></html>

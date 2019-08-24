@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Practice 17: Dropdowns</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>1. Basic Dropdown</h2>
+        <p>The <code>.dropdown</code> class is used to indicate a dropdown menu.</p>
+        <p>Use the <code>.dropdown-menu</code> class to actually build the dropdown menu.</p>
+        <p>To open the dropdown menu, use a button or a link with a class of <code>.dropdown-toggle</code> and <code>data-toggle="dropdown"</code>.</p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>2. Dropdowns Divider</h2>
+        <p>The <code>.dropdown-divider</code> class is used to separate links inside the dropdown menu with a thin horizontal line:</p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Another link</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>3. Dropdowns Header</h2>
+        <p>The <code>.dropdown-header</code> class is used to add headers inside the dropdown menu:</p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu">
+                <h5 class="dropdown-header">Dropdown header</h5>
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+                <h5 class="dropdown-header">Dropdown header</h5>
+                <a class="dropdown-item" href="#">Another link</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>4. Disable and Active items</h2>
+        <p>The <code>.active</code> class adds a blue background color to the active link.</p>
+        <p>The <code>.disabled</code> class disables a dropdown item (grey text color and a no-parking-sign on hover).</p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Normal</a>
+                <a class="dropdown-item active" href="#">Active</a>
+                <a class="dropdown-item disabled" href="#">Disabled</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>5. Dropdown Position</h2>
+        <p>You can also create a "dropright" or "dropleft" menu, by adding the <code>.dropright</code> or <code>.dropleft</code> class to the dropdown element. Note that the caret/arrow is added automatically:</p>
+        <div class="dropdown dropright">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropright button
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="dropdown dropleft float-right">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropright button
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>6. Dropdown Menu Right</h2>
+        <p>Add the <code>.dropdown-menu-right</code> class to <code>.dropdown-menu</code> to right-align the dropdown menu.</p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Wide dropdown button to demonstrate this example
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>7. Dropup</h2>
+        <p>The <code>.dropup</code> class makes the dropdown menu expand upwards instead of downwards:</p>
+        <div class="dropup">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropup button
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+        </div>
+    </div>
+</body></html>
