@@ -6,14 +6,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="./jquery-3.4.1.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    
     <style>
         /* Make the image fully responsive */
         .carousel-inner img {
             width: 100%;
             height: 60%;
+        }
+
+        .checked {
+            color: orange;
         }
 
         hr {
@@ -101,142 +107,545 @@ height: auto; margin-bottom:0;">
                 </div>
                 <br>
 
-                <div class="container-fluid text-center">
+                <div class="container text-center">
                     <h3>Yue Xiao</h3>
                     <p>Software developer</p>
                 </div>
-                <h5>Photo of me:</h5>
-                <div class="fakeimg">Fake Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                <h3>Some Links</h3>
-                <p>Lorem ipsum dolor sit ame.</p>
-                <ul class="nav nav-pills flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-                <hr class="d-sm-none">
+
+                <div class="container-fluid">
+                    <h5>PERSONAL INFO:</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <img class="rounded mb-2 mr-sm-" src="./project_images/home-icon.svg" width="40" height="40">
+                            17 Kilcross lawn, Sandyford
+                        </li>
+                        <li class="list-group-item">
+                            <img class="rounded mb-2 mr-sm-2" src="./project_images/at-icon.png" width="40" height="40">
+                            1995yuexiao@gmail.com</li>
+                        <li class="list-group-item">
+                            <img class="rounded mb-2 mr-sm-2" src="./project_images/mobile-icon.png" width="40" height="40">
+                            +353 (89) 4416833
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://www.facebook.com/1995yuexiao">
+                                <img class="rounded mb-2 mr-sm-2" src="./project_images/facebook-icon.png" width="40" height="40"></a>
+                            <a href="https://github.com/YueXiao1995">
+                                <img class="rounded mb-2 mr-sm-2" src="./project_images/github-icon.png" width="40" height="40">
+                            </a>
+                            <a href="https://leetcode.com/yue_xiao">
+                                <img class="rounded mb-2 mr-sm-2" src="./project_images/leetcode-icon.jpg" width="40" height="40">
+                            </a>
+                            <a href="https://www.instagram.com/yue3077">
+                                <img class="rounded mb-2 mr-sm-2" src="./project_images/instagram-icon.jpg" width="40" height="40"> </a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div class="container-fluid">
+                    <center><button class="btn btn-primary">Download Resume</button></center>
+                </div>
             </div>
+
+
             <div class="col-sm-8">
                 <div>
                     <h2>PROFILE</h2>
                     <hr>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <p>As a postgraduate pursuing Master’s degree in Computer Science, I am looking for challenging internship and graduate programme opportunities in the relevant field. I am keen to apply the technical knowledge and skills learned from my courses as well as the work experience from my last summer internship into software development.</p>
                 </div>
+                <br>
                 <div>
                     <h2>WORK EXPERIENCE</h2>
                     <hr>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 mt-3">
-                                <div class="card">
-                                    <div class="card-horizontal">
-                                        <div class="img-square-wrapper">
-                                            <img class="" src="./project_images/xiaoliedu-icon.png" class="rounded" width="100" height="100">
-                                        </div>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Xiao Li Education</h4>
 
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">learn more</a>
-                                        </div>
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <div class="card">
+                                <div class="card-horizontal">
+                                    <div class="img-square-wrapper">
+                                        <img class="" src="./project_images/xiaoliedu-icon.png" class="rounded" width="100" height="100">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Xiao Li Education</h4>
+
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary float-right">learn more</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
+
                 <br>
+
+
                 <div>
                     <h2>EDUCATION</h2>
                     <hr>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 mt-3">
-                                <div class="card">
-                                    <div class="card-horizontal">
-                                        <div class="img-square-wrapper">
-                                            <img class="" src="./project_images/ucd-icon.gif" class="rounded" width="100" height="100">
-                                        </div>
-                                        <div class="card-body">
-                                            <h4 class="card-title">University College Dublin</h4>
 
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">learn more</a>
-                                        </div>
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <div class="card">
+                                <div class="card-horizontal">
+                                    <div class="img-square-wrapper">
+                                        <img class="" src="./project_images/ucd-icon.gif" class="rounded" width="100" height="100">
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 mt-3">
-                                <div class="card">
-                                    <div class="card-horizontal">
-                                        <div class="img-square-wrapper">
-                                            <img class="" src="./project_images/bjut-icon.png" class="rounded" width="100" height="100">
-                                        </div>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Beijing University of Technology</h4>
+                                    <div class="card-body">
+                                        <h4 class="card-title">University College Dublin</h4>
 
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">learn more</a>
-                                        </div>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary float-right">learn more</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 mt-3">
-                                <div class="card">
-                                    <div class="card-horizontal">
-                                        <div class="img-square-wrapper">
-                                            <img class="" src="./project_images/hohhot-no-2-icon.jpg" class="rounded" width="100" height="100">
-                                        </div>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Hohhot No.2 High School</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">learn more</a>
-                                        </div>
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <div class="card">
+                                <div class="card-horizontal">
+                                    <div class="img-square-wrapper">
+                                        <img class="" src="./project_images/bjut-icon.png" class="rounded" width="100" height="100">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Beijing University of Technology</h4>
+
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary float-right">learn more</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <div class="card">
+                                <div class="card-horizontal">
+                                    <div class="img-square-wrapper">
+                                        <img class="" src="./project_images/hohhot-no-2-icon.jpg" class="rounded" width="100" height="100">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Hohhot No.2 High School</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary float-right">learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <br>
+
                 <div>
                     <h2>SKILLS</h2>
                     <hr>
-                    <h5>Title description, Sep 2, 2017</h5>
-                    <div class="fakeimg">Fake Image</div>
-                    <p>Some text..</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    Computer Language
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Python
+                                                </th>
+                                                <th>
+                                                    Java
+                                                </th>
+
+                                                <th>
+                                                    JavaScript
+                                                </th>
+                                                <th>
+                                                    Ruby
+                                                </th>
+                                                <th>
+                                                    Swift
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                    Front-End Stack
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    HTML+CSS+JS
+                                                </th>
+                                                <th>
+                                                    Vue
+                                                </th>
+
+                                                <th>
+                                                    Bootstrap
+                                                </th>
+                                                <th>
+                                                    Android
+                                                </th>
+                                                <th>
+                                                    IOS
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                    Back-End Stack
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Flask
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                                    Database
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Mysql
+                                                </th>
+                                                <th>
+                                                    MongoDB
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                                    Machine Learning
+                                </a>
+                            </div>
+                            <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Recommend System
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+                                    Deep Learning
+                                </a>
+                            </div>
+                            <div id="collapseSix" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Recommend System
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+                                    Recommend System
+                                </a>
+                            </div>
+                            <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Recommend System
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+                                    NLP
+                                </a>
+                            </div>
+                            <div id="collapseEight" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Recommend System
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseNine">
+                                    Big Data
+                                </a>
+                            </div>
+                            <div id="collapseNine" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Recommend System
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <br>
                 <div>
                     <h2>INTERESTS</h2>
-
                     <hr>
-                    <h5>Title description, Sep 2, 2017</h5>
-                    <div class="fakeimg">Fake Image</div>
-                    <p>Some text..</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    
                 </div>
             </div>
         </div>
     </div>
+    
+    
+        <script type="text/javascript" src="./js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/081489ea7f.js"></script>
 
 </body></html>
